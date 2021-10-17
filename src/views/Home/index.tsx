@@ -53,6 +53,8 @@ const Home: React.FC = () => {
 
   return (
     <>
+    <Hero />
+    
       <PageSection
         innerProps={{ style: { margin: '10', width: '100%' } }}
         // background={

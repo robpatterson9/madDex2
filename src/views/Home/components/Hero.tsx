@@ -51,7 +51,7 @@ const InnerWrapper = styled.div`
 
 const BunnyWrapper = styled.div`
   width: 100%;
-  animation: ${flyingAnim} 3.5s ease-in-out infinite;
+  animation: ${flyingAnim} 4.5s ease-in-out infinite;
 `
 
 const StarsWrapper = styled.div`
@@ -60,8 +60,8 @@ const StarsWrapper = styled.div`
   left: 0;
 
   & :nth-child(2) {
-    animation: ${fading} 2s ease-in-out infinite;
-    animation-delay: 1s;
+    animation: ${fading} 4s ease-in-out infinite;
+    animation-delay: 2s;
   }
 
   & :nth-child(3) {
@@ -70,12 +70,12 @@ const StarsWrapper = styled.div`
   }
 
   & :nth-child(4) {
-    animation: ${fading} 2.5s ease-in-out infinite;
+    animation: ${fading} 3.5s ease-in-out infinite;
     animation-delay: 0.33s;
   }
 `
 
-const imagePath = '/images/home/lunar-bunny/'
+const imagePath = '/images/maddex1'
 const imageSrc = 'bunny'
 
 const starsImage: CompositeImageProps = {
@@ -94,9 +94,9 @@ const Hero = () => {
 
   return (
     <>
-      <BgWrapper>
+      {/* <BgWrapper>
         <InnerWrapper>{theme.isDark ? <SlideSvgDark width="100%" /> : <SlideSvgLight width="100%" />}</InnerWrapper>
-      </BgWrapper>
+      </BgWrapper> */}
       <Flex
         position="relative"
         flexDirection={['column-reverse', null, null, 'row']}
@@ -105,7 +105,7 @@ const Hero = () => {
         mt={[account ? '280px' : '50px', null, 0]}
         id="homepage-hero"
       >
-        <Flex flex="1" flexDirection="column">
+        {/* <Flex flex="1" flexDirection="column">
      
           <Heading scale="md" mb="24px">
             {t('Enter the MAD Token d-Exchange now')}
@@ -116,7 +116,7 @@ const Hero = () => {
               <Button variant={!account ? 'secondary' : 'primary'}>{t('Enter')}</Button>
             </Link>
           </Flex>
-        </Flex>
+        </Flex> */}
         <Flex
           height={['192px', null, null, '100%']}
           width={['192px', null, null, '100%']}

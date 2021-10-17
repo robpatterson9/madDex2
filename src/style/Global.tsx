@@ -22,8 +22,13 @@ const GlobalStyle = createGlobalStyle`
   }
   
 body {
-    margin-top: 00px;
-    background-image :url('./images/MAD_main.svg') 
+    margin-top: 1px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image :url('./images/bg1.png') 
+ 
   
   }
   .Iframe {
