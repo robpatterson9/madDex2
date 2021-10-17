@@ -24,17 +24,17 @@ const Wrapper = styled(Box)<{ maxHeight: string }>`
   }
 
   & :nth-child(3) {
-    animation: ${floatingAnim('5px', '10px')} 3s ease-in-out infinite;
+    animation: ${floatingAnim('6px', '10px')} 3s ease-in-out infinite;
     animation-delay: 0.66s;
   }
 
   & :nth-child(4) {
-    animation: ${floatingAnim('6px', '5px')} 3s ease-in-out infinite;
+    animation: ${floatingAnim('8px', '5px')} 3s ease-in-out infinite;
     animation-delay: 0.33s;
   }
 
   & :nth-child(5) {
-    animation: ${floatingAnim('4px', '12px')} 3s ease-in-out infinite;
+    animation: ${floatingAnim('14px', '12px')} 2s ease-in-out infinite;
     animation-delay: 0s;
   }
 `
@@ -45,13 +45,15 @@ const DummyImg = styled.img<{ maxHeight: string }>`
 `
 
 const ImageWrapper = styled(Box)`
-  height: 100%;
-  position: absolute;
+  height: 50%;
+  position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
+  z-index: -10;
+  
 
   img {
-    max-height: 100%;
+    max-height: 80%;
     width: auto;
   }
 `

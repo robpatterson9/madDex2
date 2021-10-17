@@ -53,8 +53,8 @@ const Home: React.FC = () => {
 
   return (
     <>
-    <Hero />
-    
+   
+
       <PageSection
         innerProps={{ style: { margin: '10', width: '100%' } }}
         // background={
@@ -75,6 +75,8 @@ const Home: React.FC = () => {
     
 
       >
+         <Hero />
+         
         <SalesSection margin-bottom="100px" {...swapSectionData} />
         <div>
           <br />

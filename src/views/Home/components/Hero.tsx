@@ -34,7 +34,7 @@ const fading = () => keyframes`
 `
 
 const BgWrapper = styled.div`
-  z-index: -1;
+
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -46,7 +46,7 @@ const BgWrapper = styled.div`
 const InnerWrapper = styled.div`
   position: absolute;
   width: 100%;
-  bottom: -3px;
+  bottom: 111px;
 `
 
 const BunnyWrapper = styled.div`
@@ -57,10 +57,12 @@ const BunnyWrapper = styled.div`
 const StarsWrapper = styled.div`
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+
+
 
   & :nth-child(2) {
-    animation: ${fading} 4s ease-in-out infinite;
+    animation: ${fading} 1s ease-in-out infinite;
     animation-delay: 2s;
   }
 
@@ -97,38 +99,28 @@ const Hero = () => {
       {/* <BgWrapper>
         <InnerWrapper>{theme.isDark ? <SlideSvgDark width="100%" /> : <SlideSvgLight width="100%" />}</InnerWrapper>
       </BgWrapper> */}
-      <Flex
-        position="relative"
+      <Flex flex="2"
+        position="absolute"
         flexDirection={['column-reverse', null, null, 'row']}
-        alignItems={['flex-end', null, null, 'center']}
+        alignItems={['flex-end', null, null, 'right']}
         justifyContent="center"
         mt={[account ? '280px' : '50px', null, 0]}
         id="homepage-hero"
-      >
-        {/* <Flex flex="1" flexDirection="column">
+      >          
+        <CompositeImage {...starsImage} />
      
-          <Heading scale="md" mb="24px">
-            {t('Enter the MAD Token d-Exchange now')}
-          </Heading>
-          <Flex>
-            {!account && <ConnectWalletButton mr="8px" />}
-            <Link to="/swap">
-              <Button variant={!account ? 'secondary' : 'primary'}>{t('Enter')}</Button>
-            </Link>
-          </Flex>
-        </Flex> */}
-        <Flex
-          height={['192px', null, null, '100%']}
-          width={['192px', null, null, '100%']}
+        {/* <Flex 
+          height={['192px', null, null, '10%']}
+          width={['192px', null, null, '10%']}
           flex={[null, null, null, '1']}
           mb={['24px', null, null, '0']}
           position="relative"
-        >
-      
+        > */}
+{/*       
           <StarsWrapper>
             <CompositeImage {...starsImage} />
           </StarsWrapper>
-        </Flex>
+      */}
       </Flex>
     </>
   )
