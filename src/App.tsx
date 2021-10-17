@@ -73,9 +73,17 @@ const App: React.FC = () => {
   return (
     <Router history={history}>
       <ResetCSS />
+      <div className="Banner">
+     <img src="./maddex1.png" alt="MAD" className="center" />
+
+     </div>
+
       <GlobalStyle />
+    
+
       <GlobalCheckClaimStatus excludeLocations={[]} />
       <Menu>  
+   
         <SuspenseWithChunkError fallback={<PageLoader />}>
           <Switch>
             <Route path="/" exact>

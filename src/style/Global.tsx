@@ -39,6 +39,21 @@ body {
     border-radius: 12px;
     background: transparent;
   }
+.Banner {
+ height: 120px;
+ width: 100%;
+ 
+
+ background-image :url('./bannerbg.png') 
+
+
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
     img {
       height: 100%;
