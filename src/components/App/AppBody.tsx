@@ -9,7 +9,7 @@ export const BodyWrapper = styled(Card)`
   max-width: 555px;
   width: 100%;
 
-  background-image:'../../public/images/MAD_main.svg'
+  // background-image:'../../public/images/MAD_main.svg'
  
   
 `

@@ -17,6 +17,7 @@ const Wrapper = styled.div`
   }
 `
 
+
 const BubbleWrapper = styled(Flex)`
   svg {
     fill: ${({ theme }) => theme.colors.textSubtle};
