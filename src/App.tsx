@@ -74,7 +74,7 @@ const App: React.FC = () => {
     <Router history={history}>
       <ResetCSS />
       <div className="Banner">
-     <img src="./maddex1.png" alt="MAD" className="center" />
+     <img src="./logo.svg" alt="MAD" className="center" />
 
      </div>
 
